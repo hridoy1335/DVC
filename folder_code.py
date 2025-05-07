@@ -9,7 +9,11 @@ make_data = {
     'Gender': ['Male', 'Female', 'Male', 'Female']
 }
 
+
 df = pd.DataFrame(make_data)
+
+new_data = {'Name':'Hridoy','Age':23,'Country':'bd','Score':99,'Gender':'Male'}
+df.loc[len(df.index)] = new_data
 
 folder_name = 'data'
 
