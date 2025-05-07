@@ -18,6 +18,9 @@ df.loc[len(df.index)] = new_data
 new_data1 = {'Name':'Khan','Age':25,'Country':'india','Score':98,'Gender':'Male'}
 df.loc[len(df.index)] = new_data1
 
+new_data2 = {'Name':'borsha','Age':23,'Country':'savar','Score':100,'Gender':'female'}
+df.loc[len(df.index)] = new_data2
+
 folder_name = 'data'
 
 os.makedirs(folder_name,exist_ok=True)
