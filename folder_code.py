@@ -15,6 +15,9 @@ df = pd.DataFrame(make_data)
 new_data = {'Name':'Hridoy','Age':23,'Country':'bd','Score':99,'Gender':'Male'}
 df.loc[len(df.index)] = new_data
 
+new_data1 = {'Name':'Khan','Age':25,'Country':'india','Score':98,'Gender':'Male'}
+df.loc[len(df.index)] = new_data1
+
 folder_name = 'data'
 
 os.makedirs(folder_name,exist_ok=True)
