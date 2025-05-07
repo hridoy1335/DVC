@@ -1,0 +1,22 @@
+import os
+import pandas as pd
+
+make_data = {
+    'Name': ['John', 'Anna', 'Peter', 'Linda'],
+    'Age': [28, 24, 35, 32],
+    'Country': ['USA', 'UK', 'Australia', 'Germany'],
+    'Score': [90, 85, 88, 92],
+    'Gender': ['Male', 'Female', 'Male', 'Female']
+}
+
+df = pd.DataFrame(make_data)
+
+folder_name = 'data'
+
+os.makedirs(folder_name,exist_ok=True)
+
+file_name = os.path.join(folder_name,'dumy_data.csv')
+
+df.to_csv(file_name,index=False)
+
+print(f'folder and file create successfull on {file_name}')  # folder and file create successfull on data\dumy_data.csv
